@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="ie ie6 lte9 lte8 lte7 os-win"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="ie ie7 lte9 lte8 lte7 os-win"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8 lte9 lte8 os-win"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie ie9 lte9 os-win"> <![endif]-->
+<!--[if gt IE 9]> <html lang="en" class="os-win"> <![endif]-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Extreme Pong</title>
+    
+<!-- Initialize viewport and make favicon -->
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'> 
+    
+<!-- Jquery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+<!-- Responsive Design Plugin Bootstrap CSS then javaScript -->    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+<!-- Font (Google Font ORBITRON) -->
+<link href='https://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
+    
+<!-- Internal style sheets -->
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link rel="stylesheet" type="text/css" href="CSS/queries.css">
+    
+<!-- Icons (Font Awesome via Bootstrap) -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+
+</head>
+
+<!-- Begin the browser window layout -->
+<body>
+    <header>
+        <h1>P0NG 2.0</h1>
+         <marquee behavior="scroll" direction="left" 
+        onmouseover="this.stop();" 
+        onmouseout="this.start();">
+            Mouse over the field to start! &nbsp; &nbsp; Go Big (screen) or Go Home! &nbsp; &nbsp; For external use only. &nbsp; &nbsp; Remember to always wear eye protection &nbsp; &nbsp; Consult a doctor if gameplay lasts more than 4 hours &nbsp; &nbsp; 
+            
+    </marquee>
+    </header>
+    
+    <!-- Scoreboard -->
+
+    <div class="row info">
+            <div class="col-md-4">
+            <!-- Scoreboard -->
+            <h2>Score</h2>
+            <p id="scoreBoard">0</p>
+            <h2>Best</h2>
+            <p id="scoreBest">0</p>
+                
+            <button type="button" class="btn btn-lg" id="start">Reset Score</button>
+            <!-- <button type="button" class="btn btn-lg" id="stop">Pause</button>
+            <button type="button" class="btn btn-lg" id="reset">Quit</button>
+            <p class="clearfix"></p>
+                -->
+            </div>
+        
+        
+        <!-- Field -->
+            <div class="col-md-8">
+            <canvas id = "gameCanvas" width = "700" height = "700">
+            <!-- Game Program -->
+            <script type="text/javascript" src="javaScript/pong.js"></script>
+            </canvas>
+            </div>
+            </div>
+
+
+</body>    
+</html>
